@@ -10,7 +10,10 @@ class TrainsController extends Controller
 {
     public function index() {
         $date = date('Y-m-d');
+        $trains= Train::all();
         $trains = Train::whereDate('orario_di_partenza', $date)->orderby('orario_di_partenza', 'asc')->get();
+        
         return view("home", ['trains' => $trains], ['date' => $date]);
+        //return view ("home",['trains'=> $trains]);
     }
 }
