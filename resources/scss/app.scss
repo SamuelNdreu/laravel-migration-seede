@@ -1,2 +1,16 @@
 @import "bootstrap";
 @import "@fortawesome/fontawesome-free/css/all.min.css";
+
+
+
+body{
+    background: rgb(238,174,174);
+    background: radial-gradient(circle, rgba(238,174,174,1) 0%, rgba(246,108,22,1) 48%, rgba(255,0,0,1) 100%);
+}
+
+#trains{
+    padding-top: 100px;
+    .heading-table{
+      background-color: rgb(201, 18, 18);
+    }
+}
