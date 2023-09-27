@@ -22,6 +22,7 @@
                 AZIENDA
             </div>
         </article>
+
         @foreach($trains as $train)
         <article class="row border border-dark {{$loop->odd ? 'bg-white' : 'bg-light'}}">
             <div class="col-1 p-3">
